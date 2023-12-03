@@ -17,8 +17,9 @@ img {
   display: block;
   width: 100%;
 }
-/* mobile */
 
+/* mobile */
+/* landing-section */
 .container-1-pc,
 .box-container,
 .container-2-pc {
@@ -41,4 +42,54 @@ img {
 
 .mobile h1 {
   padding: 0.7rem;
+}
+
+#mobile {
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+/* about-section */
+.text-container,
+.image-container-pc {
+  display: none;
+}
+
+#heading h1 {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.mobile-about img {
+  padding: 0.4rem;
+}
+
+.paragraph-mobile {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+/* cars-section */
+.cars-section h1,
+h6,
+img {
+  padding: 0.7rem;
+}
+
+.cars-section h1 {
+  font-weight: 800;
+}
+
+.cars-section h6 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.contact-section {
+  background-image: url(/images/swansway-motor-group-wnz9awGVA9w-unsplash.jpg);
+  background-position: cover;
+  back
 }
