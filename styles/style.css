@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
 }
 *,
@@ -15,7 +15,7 @@ html {
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* mobile */
@@ -41,13 +41,57 @@ img {
 }
 
 .mobile h1 {
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
 #mobile {
   text-decoration: underline;
   font-weight: 900;
   font-size: 2.3rem;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .landing-section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile {
+    display: none;
+  }
+  .container-1-pc,
+  .box-container,
+  .container-2-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .landing-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-1-pc div,
+  .container-2-pc div {
+    width: 33%;
+  }
+
+  #about-us h1,
+  #sign-up h1 {
+    float: right;
+  }
+
+  .box-horizontal {
+    width: 20rem;
+    height: 0.5rem;
+    background-color: aliceblue;
+  }
+
+  .box-vertical {
+    width: 0.5rem;
+    height: 20rem;
+    background-color: aliceblue;
+  }
 }
 
 /* about-section */
@@ -72,7 +116,37 @@ img {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-about {
+    display: none;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #heading h1 {
+    font-size: 3rem;
+  }
+  .text-container {
+    display: block;
+  }
+  .image-container-pc {
+    display: flex;
+    gap: 1rem;
+  }
+  .person-image {
+    border: 1px solid white;
+    margin: 1rem;
+  }
+  .paragraph {
+    padding: 4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
 /* cars-section */
+
 .cars-section h1,
 h6,
 img {
@@ -87,9 +161,85 @@ img {
   font-weight: 700;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .cars-section h1 {
+    font-size: 3.5rem;
+  }
 
+  .cars-section h6 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+/* Contact section */
 .contact-section {
   background-image: url(/images/swansway-motor-group-wnz9awGVA9w-unsplash.jpg);
-  background-position: cover;
-  back
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100vh;
+}
+
+.heading-contact h1 {
+  letter-spacing: 0.2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+
+.paragraph-contact p {
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: hsla(105, 6%, 13%, 0.466);
+  max-width: 1050px;
+}
+
+.input-group {
+  padding: 0.8rem;
+}
+
+input,
+textarea {
+  width: 90%;
+  max-width: 1050px;
+  padding: 0.5rem;
+  outline: 0;
+  border: 1px solid rgb(240, 240, 240);
+  background: hsla(99, 7%, 13%, 0.4);
+  cursor: text;
+  color: white;
+}
+
+button {
+  padding: 0.4rem;
+  width: 60%;
+  border-radius: 7px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .heading-contact h1 {
+    font-size: 4rem;
+    padding: 3rem;
+  }
+
+  .paragraph-contact p {
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .forms form {
+    padding: 2rem;
+  }
 }
