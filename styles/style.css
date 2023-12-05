@@ -92,6 +92,28 @@ img {
     height: 20rem;
     background-color: aliceblue;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1024px) {
+  .landing-section h1 {
+    font-size: 3.7rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
 }
 
 /* about-section */
@@ -115,7 +137,7 @@ img {
   padding: 1rem;
   font-weight: 700;
 }
-
+/* tablet */
 @media screen and (min-width: 768px) {
   .mobile-about {
     display: none;
@@ -132,10 +154,13 @@ img {
   }
   .image-container-pc {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1rem;
   }
   .person-image {
     border: 1px solid white;
+    max-width: 30rem;
     margin: 1rem;
   }
   .paragraph {
@@ -144,9 +169,15 @@ img {
     font-size: 1.5rem;
   }
 }
+/* pc */
+@media screen and (min-width: 1024px) {
+  .paragraph {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
 
 /* cars-section */
-
 .cars-section h1,
 h6,
 img {
@@ -161,6 +192,15 @@ img {
   font-weight: 700;
   font-size: 1rem;
 }
+
+.image-container-cars div {
+  border: 1px solid white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* tablet */
 @media screen and (min-width: 768px) {
   .cars-section h1 {
     font-size: 3.5rem;
@@ -171,6 +211,24 @@ img {
     font-size: 2rem;
   }
 }
+
+/* PC  */
+@media screen and (min-width: 1024px) {
+  .cars-section h1 {
+    font-size: 4rem;
+  }
+  .image-container-cars {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 5rem 1rem;
+  }
+
+  .image-container-cars div {
+    width: 100%;
+  }
+}
+
 /* Contact section */
 .contact-section {
   background-image: url(/images/swansway-motor-group-wnz9awGVA9w-unsplash.jpg);
@@ -185,7 +243,7 @@ img {
   padding-left: 0.6rem;
   padding-right: 0.6;
   padding-top: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.6rem;
   font-weight: 800;
 }
 
@@ -227,6 +285,11 @@ button {
   border-radius: 7px;
 }
 
+button:active {
+  background-color: transparent;
+  color: white;
+}
+
 /* tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .heading-contact h1 {
@@ -241,5 +304,18 @@ button {
 
   .forms form {
     padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .contact-section {
+    background-position: center;
+  }
+  .heading-contact h1 {
+    font-size: 4rem;
+  }
+  .forms {
+    width: 60%;
+    margin: auto;
   }
 }
