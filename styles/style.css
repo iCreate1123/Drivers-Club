@@ -177,6 +177,17 @@ img {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  #heading h1 {
+    font-size: 5rem;
+  }
+  .paragraph {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 /* cars-section */
 .cars-section h1,
 h6,
@@ -291,6 +302,12 @@ button:active {
 }
 
 /* tablet */
+@media screen and (min-width: 706px) {
+  .forms {
+    width: 550px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .heading-contact h1 {
     font-size: 4rem;
@@ -301,7 +318,6 @@ button:active {
     padding: 3rem;
     font-size: 1.5rem;
   }
-
   .forms form {
     padding: 2rem;
   }
@@ -317,5 +333,55 @@ button:active {
   .forms {
     width: 60%;
     margin: auto;
+  }
+}
+
+/* pc */
+
+@media screen and (min-width: 1255px) {
+  .forms {
+    max-width: 700px;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 70%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .heading-contact h1 {
+    font-size: 6rem;
+  }
+  .paragraph-contact p {
+    font-size: 2.3rem;
+  }
+  .forms {
+    padding: 8rem;
+  }
+
+  input,
+  textarea {
+    padding: 1.3rem;
+  }
+
+  textarea {
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+
+  .input-group {
+    padding: 1.3rem;
+  }
+
+  button {
+    padding: 1.3rem;
+    font-size: 1.5rem;
   }
 }
